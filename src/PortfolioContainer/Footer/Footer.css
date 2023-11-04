@@ -1,0 +1,96 @@
+.footerdiv
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerdiv a
+{
+    height: 45px;
+    width: 45px;
+    background-color: #f5f9fac8;
+    margin: 10px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 1px 6px 2px 2px #dcddeb5a;
+    line-height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fa-linkedin
+{
+    color: #0097e6;
+}
+.fa-youtube
+{
+    color: #e84118;
+}
+.fa-github
+{
+    color: #211F1F;
+}
+.footerdiv a i
+{
+    transition: all 0.3s linear;
+}
+.footerdiv a:hover .fa
+{
+    transform: scale(1.5);
+    color: white;
+}
+
+.footerdiv a::before
+{
+    content: " " ;
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: 90%;
+    left: -50%;
+    background-color: midnightblue;
+    transform: rotate(60deg);
+}
+
+.footerdiv a:hover::before
+{
+    animation: socialIcon 0.8s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes socialIcon
+{
+    0%
+    {
+        top: 90%;
+        left: -50%;
+    }
+    50%
+    {
+        top: -60%;
+        left: -10%;
+    }
+    100%
+    {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+.copyright
+{
+    background-color: #1B223D;
+}
+
+.text-center
+{
+    text-align: center !important;
+}
+
+.py-4
+{
+    padding-top: 1.5rem !important;
+    padding-bottom: 1rem !important;
+}
